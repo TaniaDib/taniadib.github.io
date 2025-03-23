@@ -72,49 +72,6 @@ Licence URI: http://www.os-templates.com/template-terms
 
 
   
-  <!-- Sección de Precios de Criptomonedas -->
-
-  
-  <div id="crypto-prices">
-    
-    <div>
-      <h1><font size=4><color= #967508>Precio de Cryptos cada 1 minuto</color></font></color></h1>
-      <h2><font size=3>Precio de Bitcoin (BTC): <span id="btc-price">Cargando...</span></font></h2>
-      <h2><font size=3>Precios de Criptomonedas de mi interés al 11/12/24</font></h2>
-      <p>Ethereum (ETH): <span id="eth-price">Cargando...</span></p>
-      <p>Cardano (ADA): <span id="ada-price">Cargando...</span></p>
-      <p>Dogecoin (DOGE): <span id="doge-price">Cargando...</span></p>
-    </div>
-  </div>
-
-  <script>
-    const apiUrl = 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,cardano,dogecoin&vs_currencies=usd';
-
-    // Función para obtener los precios y actualizarlos en el HTML
-    async function fetchCryptoPrices() {
-      try {
-        const response = await fetch(apiUrl);
-        const data = await response.json();
-
-        // Actualiza los precios en el HTML
-        document.getElementById('btc-price').innerText = `$${data.bitcoin.usd}`;
-        document.getElementById('eth-price').innerText = `$${data.ethereum.usd}`;
-        document.getElementById('ada-price').innerText = `$${data.cardano.usd}`;
-        document.getElementById('doge-price').innerText = `$${data.dogecoin.usd}`;
-      } catch (error) {
-        console.error('Error al obtener precios:', error);
-      }
-    }
-
-    // Llama a la función al cargar la página
-    fetchCryptoPrices();
-
-    // Opcional: Actualiza los precios cada minuto
-    setInterval(fetchCryptoPrices, 60000);
-  </script>
-
-</body>
-        <!-- Fin pruebas Crypto !-->
 
 
         
