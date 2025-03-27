@@ -138,7 +138,7 @@ html,body {
 }
 
 .navbar .navbar-nav > li > a, .navbar .navbar-brand, .navbar .navbar-nav > li > a:focus{
-  background-color: transparent;
+  background-color: #18005b;
   color: #fff;
 }
 
