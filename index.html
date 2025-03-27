@@ -675,7 +675,10 @@
 
   <script>
     $('a').click(function(e)
-      {
+          {
+      if (this.href.indexOf("cv.pdf") === -1) {
+        e.preventDefault();
+      }
         e.preventDefault();
       });
 
