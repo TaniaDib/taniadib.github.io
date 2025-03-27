@@ -54,8 +54,8 @@
         </ul>
         <a class="header__button" href="#">NECESITAS AYUDA? CONVERSEMOS...</a>
 
-      </section>
-<!-- fin seccion inicio -->
+     
+
         
         <!-- Botón de WhatsApp -->
 <a href="https://wa.me/56977034352?text=Hola,%20me%20gustaría%20conocer%20más%20sobre%20tu%20trabajo%20en%20prevención%20del%20suicidio.%20¿Podrías%20ayudarme?" 
@@ -75,7 +75,13 @@
 >
    📱 Contactar por WhatsApp
 </a>
+
+	      
+	    
         <!-- Fin botón de Whatsapp? -->
+	       </section>
+	    <!-- fin seccion inicio -->
+	    
       </div>
       <div class="social-icon pull-right">
         <ul>
@@ -684,18 +690,17 @@
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="js/mixitup.js"></script>
 
-  <script>
-    $('a').click(function(e)
-          {
-      if (this.href.indexOf("cv.pdf") === -1) {
-        e.preventDefault();
-      }
-        e.preventDefault();
-      });
+<script>
+  $('a').click(function(e) {
+    if (this.href.indexOf("cv.pdf") === -1) {
+      e.preventDefault();
+    }
+  });
 
-    // calling mixitup
-    var mixer = mixitup(".portfolio");
-  </script>
+  // calling mixitup
+  var mixer = mixitup(".portfolio");
+</script>
+	
 </body>
 </html>  
 
